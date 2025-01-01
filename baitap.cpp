@@ -263,6 +263,23 @@ int main() {
 	cout << "\nDanh sach ke:\n";
 	displayAdjList(nodes, sodinh);
 
+	// khoi tao mang danh dau
+	bool visited[max] = {false};
+
+	// duyet do thi theo chieu sau
+	cout << "\nDuyet do thi theo chieu sau tu dinh Ha Noi (0): ";
+	DFS(nodes, visited, sodinh, 0);
+	cout << endl;
+
+	// khoi tao lai mang danh dau truoc khi duyet theo chieu rong
+	fill(begin(visited), end(visited), false);
+
+	// Duyet do thi theo chieu rong
+	cout << "\nDuyet do thi theo chieu rong tu dinh Ha Noi (0):";
+	BFS(nodes, visited, sodinh, 0);
+	cout << endl;
+
+
 	return 0;
 }
 
