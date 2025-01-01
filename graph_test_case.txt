@@ -1,0 +1,40 @@
+
+Nhap so dinh: 11
+Nhap ten dinh:
+1. HN (Hà Nội)
+2. TN (Thái Nguyên)
+3. ST (Sơn Tây)
+4. HB (Hòa Bình)
+5. PL (Phú Thọ)
+6. BN (Bắc Ninh)
+7. BG (Bắc Giang)
+8. UB (Yên Bái)
+9. HP (Hải Phòng)
+10. HD (Hải Dương)
+11. HY (Hưng Yên)
+
+Nhap danh sach lien ket va trong so:
+HN -> TN : D7 -> ST : D6 -> HB : D5 -> PL : D4 -> BN : D8
+TN -> HN : D7
+ST -> HN : D6
+HB -> HN : D5
+PL -> HN : D4 -> HD : D2 -> HY : D3
+BN -> HN : D8 -> BG : D9 -> HD : D11
+BG -> BN : D9 -> UB : D10
+UB -> BG : D10 -> HP : D12
+HP -> UB : D12 -> HD : D13
+HD -> PL : D2 -> BN : D11 -> HP : D13
+PL -> HY : D3
+
+Ma tran ke:
+D0  D7  D6  D5  D4  D8  0   0   0   0   0
+D7  D0  0   0   0   0   0   0   0   0   0
+D6  0   D0  0   0   0   0   0   0   0   0
+D5  0   0   D0  0   0   0   0   0   0   0
+D4  0   0   0   D0  D8  0   0   0   D2  D3
+D8  D8  0   0   0   D0  D9  0   0   D11 0
+0   0   0   0   D9  D9  D0  D10 0   0   0
+0   0   0   0   0   D10 D10 D0  D12 0   0
+0   0   0   0   0   0   0   D12 D0  D13 0
+0   0   0   0   D2  D11 0   0   D13 D0  0
+0   0   0   0   D3  0   0   0   0   0   D0

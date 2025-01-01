@@ -1,0 +1,4 @@
+﻿Viết chương trình cài đặt đồ thị cho như trên bảng theo hai cấu trúc lưu trữ 
+Sử dụng ma trận lân cận -> nhập thông tin đồ thị 
+Sử dụng danh sách lân cận  -> nhập thông tin đồ thị 
+Duyệt đồ thị và in thứ tự các đỉnh theo 2 cách duyệt (BFS, DFS)
